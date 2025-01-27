@@ -1,0 +1,45 @@
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    /***** font-size *****/
+    --text-very-small: 14px;
+    --text-sm: 18px;
+    --text-base: 22px;
+    --text-md: 28px;
+    --text-lg: 36px;
+    --text-xl: 48px;
+    --text-2xl: 96px;
+}
+
+/***** font-family *****/
+.font-popins {
+    font-family: var(--font-poppins);
+}
+
+/***** font-size *****/
+.text-very-small {
+    font-size: var(--text-very-small);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+}
