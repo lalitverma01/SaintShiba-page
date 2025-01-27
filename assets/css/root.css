@@ -9,8 +9,10 @@
     --text-xl: 48px;
     --text-2xl: 96px;
     /***** line-height *****/
+    --lh-25: 25.2px;
     --lh-32: 32.4px;
     --lh-33: 33px;
+    --lh-42: 42px;
     --lh-54: 54px;
     --lh-61: 61.44px;
     --lh-95: 95.52px;
@@ -18,7 +20,11 @@
     --color-black: #000000BF;
     --bg-raven: #0C0B0B;
     --color-royal-flycatcher-crest: #F06500;
+    --bg-aqua-green: #00E396;
+    --bg-thick-purple: #8B35E2;
     --color-chrome-yellow: #FFA800;
+    --bg-krishna-blue: #00B2FF;
+    --bg-neon-fuchsia: #FF4560;
 }
 
 /***** font-family *****/
@@ -56,12 +62,21 @@
 }
 
 /***** line-height *****/
+
+.lh-25 {
+    line-height: var(--lh-25);
+}
+
 .lh-32 {
     line-height: var(--lh-32);
 }
 
 .lh-33 {
     line-height: var(--lh-33);
+}
+
+.lh-42 {
+    line-height: var(--lh-42);
 }
 
 .lh-54 {
@@ -86,7 +101,7 @@
 }
 
 .color-royal-flycatcher-crest {
-    color: var(--color-royal-flycatcher-crest);
+    color: var(--color-royal-flycatcher-crest) !important;
 }
 
 @media (max-width:767.98px) {
