@@ -10,10 +10,13 @@
     --text-2xl: 96px;
     /***** line-height *****/
     --lh-32: 32.4px;
+    --lh-33: 33px;
     --lh-54: 54px;
+    --lh-61: 61.44px;
     --lh-95: 95.52px;
     /***** color *****/
     --color-black: #000000BF;
+    --bg-raven: #0C0B0B;
     --color-royal-flycatcher-crest: #F06500;
     --color-chrome-yellow: #FFA800;
 }
@@ -57,8 +60,16 @@
     line-height: var(--lh-32);
 }
 
+.lh-33 {
+    line-height: var(--lh-33);
+}
+
 .lh-54 {
     line-height: var(--lh-54);
+}
+
+.lh-61 {
+    line-height: var(--lh-61);
 }
 
 .lh-95 {
@@ -70,6 +81,26 @@
     color: var(--color-black);
 }
 
+.bg-raven {
+    background-color: var(--bg-raven);
+}
+
 .color-royal-flycatcher-crest {
     color: var(--color-royal-flycatcher-crest);
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --text-2xl: 58px;
+        --lh-95: normal;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --text-2xl: 48px;
+        --lh-95: 50px;
+        --text-xl: 40px;
+        --lh-61: normal;
+    }
 }

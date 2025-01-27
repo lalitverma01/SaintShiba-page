@@ -14,11 +14,37 @@
 
 /***** width *****/
 .max-w-1320 {
-    max-width: 1320px;
+    max-width: 1320px !important;
 }
 
 .max-w-660 {
-    max-width: 660px;
+    max-width: 579px;
+}
+
+/***** margin & padding *****/
+.py-23 {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-59 {
+    margin-top: 59px !important;
+}
+
+.mt-227 {
+    margin-top: 227px !important;
+}
+
+.mt-243 {
+    margin-top: 243px !important;
 }
 
 /***** gap *****/
@@ -26,6 +52,11 @@
     gap: 32px;
 }
 
+.opacity-70 {
+    opacity: 70%;
+}
+
+/***** nav-bar *****/
 .menu-lines {
     width: 30px;
     height: 5px;
@@ -52,16 +83,40 @@
     transform: rotate(-43deg);
 }
 
-.py-23 {
-    padding-top: 23px;
-    padding-bottom: 23px;
-}
-
 .btn-1 {
     padding: 7px 23px 7px 23px;
     border-radius: 23.5px;
     border: none;
     background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
+}
+
+.btn-2 {
+    padding: 12px 32px 12px 32px;
+    border-radius: 33px;
+    border: none;
+    background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
+}
+
+.box {
+    position: relative;
+    padding: 24px;
+    border-radius: 10px;
+    backdrop-filter: blur(32px);
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%);
+    padding: 1px;
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+
 }
 
 @media (max-width:991.98px) {
@@ -82,6 +137,16 @@
 
     .show-navbar {
         right: 0 !important;
+    }
+
+    .mt-227 {
+        margin-top: 100px !important;
+    }
+}
+
+@media (max-width:767.98px) {
+    .mt-227 {
+        margin-top: 70px !important;
     }
 }
 
