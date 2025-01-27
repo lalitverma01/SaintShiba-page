@@ -21,7 +21,15 @@
     max-width: 579px;
 }
 
+.max-w-547 {
+    max-width: 547px;
+}
+
 /***** margin & padding *****/
+.mt-12 {
+    margin-top: 12px;
+}
+
 .mt-13 {
     margin-top: 13px;
 }
@@ -351,6 +359,187 @@
 
 .table-row {
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+}
+
+/****** roadmap ******/
+
+.roadmap {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    color: #000000;
+}
+
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background-color: var(--color-white);
+    top: 6%;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 72.5%;
+}
+
+
+.content-box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 60%;
+}
+
+
+.content-box::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: -19px;
+    background: linear-gradient(180deg, #FFA800 0%, #F06500 100%);
+    top: 13%;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 12px;
+}
+
+.left {
+    left: -10%;
+}
+
+.right {
+    left: 50%;
+    /* right: -50%; */
+}
+
+.right::after {
+    left: -16px;
+}
+
+
+.content {
+    padding: 20px 95px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+/****** accordion ******/
+.faq .accordion {
+    max-width: 635px !important;
+    width: 100%;
+}
+
+.faq .accordion-button {
+    box-shadow: none !important;
+    margin: 24px 0px 17px 0px !important;
+    padding: 0 !important;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    padding-bottom: 25px;
+}
+
+.faq .accordion-item {
+    z-index: 1;
+    border: none;
+}
+
+.faq .accordion-body {
+    padding: 0px 0px 20px 0px !important;
+}
+
+.faq .accordion-item {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+}
+
+.faq .accordion-button {
+    background-color: transparent !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+    background-image: url("../image/svg/arrow-2-svg.svg") !important;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(0);
+}
+
+.faq .accordion-button::after {
+    background-image: url("../image/svg/arrow-img.svg") !important;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .content-box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .content-box::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+    }
+
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .left {
+        left: 0%;
+    }
 }
 
 @media(min-width:576px) {
