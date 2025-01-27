@@ -170,17 +170,13 @@
     height: 67px;
 }
 
-.number {
-    color: #ffffff;
-}
-
 .card-1,
 .card-2 {
     height: 154px;
     padding: 16px 20px;
     position: relative;
     border-radius: 10px;
-    backdrop-filter: blur(32px)
+    backdrop-filter: blur(32px);
 }
 
 .card-1:hover,
@@ -232,6 +228,10 @@
     border-radius: 4px;
 }
 
+.bg-color {
+    background-color: var(--bg-black-wash);
+}
+
 .bg-1 {
     background: var(--color-royal-flycatcher-crest);
 }
@@ -256,9 +256,6 @@
     max-width: 315px;
 }
 
-.tablebox {
-    position: relative !important;
-}
 
 .tablebox::before {
     content: "";
@@ -298,20 +295,6 @@
     }
 }
 
-@media(min-width:768px) {
-    /* .mb-md-0 {
-        margin-bottom: 0;
-
-    } */
-}
-
-@media(min-width:992px) {
-
-    .mb-lg-0 {
-        margin-bottom: 0;
-    }
-}
-
 @media (max-width:991.98px) {
     .card-1 {
         margin-top: 24px;
@@ -344,7 +327,6 @@
         right: 0 !important;
     }
 }
-
 
 @media (min-width:992px) {
     .nav-bg-blur {
