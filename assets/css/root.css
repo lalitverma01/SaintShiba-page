@@ -8,6 +8,14 @@
     --text-lg: 36px;
     --text-xl: 48px;
     --text-2xl: 96px;
+    /***** line-height *****/
+    --lh-32: 32.4px;
+    --lh-54: 54px;
+    --lh-95: 95.52px;
+    /***** color *****/
+    --color-black: #000000BF;
+    --color-royal-flycatcher-crest: #F06500;
+    --color-chrome-yellow: #FFA800;
 }
 
 /***** font-family *****/
@@ -42,4 +50,26 @@
 
 .text-2xl {
     font-size: var(--text-2xl);
+}
+
+/***** line-height *****/
+.lh-32 {
+    line-height: var(--lh-32);
+}
+
+.lh-54 {
+    line-height: var(--lh-54);
+}
+
+.lh-95 {
+    line-height: var(--lh-95);
+}
+
+/***** color *****/
+.color-black {
+    color: var(--color-black);
+}
+
+.color-royal-flycatcher-crest {
+    color: var(--color-royal-flycatcher-crest);
 }
