@@ -32,7 +32,7 @@
 }
 
 .max-w-547 {
-    max-width: 547px !important;
+    max-width: 280px !important;
 }
 
 /***** margin & padding *****/
@@ -158,10 +158,8 @@
 
 .btn-1:hover,
 .btn-2:hover {
-    background-color: var(--color-white);
-    color: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%) !important;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-royal-flycatcher-crest) !important;
+    background: white !important; 
 }
 
 .btn-2 {
@@ -175,7 +173,7 @@
     position: relative;
     padding: 24px;
     border-radius: 10px;
-    backdrop-filter: blur(32px) !important;
+    backdrop-filter: blur(16px) !important;
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
 }
 
@@ -195,11 +193,13 @@
 .img-1 {
     bottom: 0;
     left: 0;
+    z-index: -1;
 }
 
 .img-2 {
     top: 2%;
     right: 0;
+    z-index: -1;
 }
 
 /***** section-2 *****/
@@ -290,7 +290,7 @@
     padding-top: 1px;
     padding-left: 1px;
     padding-right: 1px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.2) 103.14%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -342,7 +342,7 @@
     padding-bottom: 1px;
     padding-left: 1px;
     padding-right: 1px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.2) 103.14%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
@@ -366,14 +366,14 @@
 }
 
 /****** roadmap ******/
-.timeline {
+/* .content-box {
     position: relative;
     max-width: 1200px;
     width: 75%;
     margin: 0 auto;
 }
 
-.timeline::after {
+.content-box::after {
     content: '';
     position: absolute;
     width: 8px;
@@ -421,6 +421,54 @@
     margin: 30px 95px;
     position: relative;
     border-radius: 10px;
+} */
+
+.py-59 {
+    padding-top: 59px;
+    padding-bottom: 59px;
+}
+
+.roadmap::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 75%;
+}
+
+.content-box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.content-box::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: -18px;
+    background: linear-gradient(180deg, #FFA800 0%, #F06500 100%);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -16px;
 }
 
 .roadmap-left-img {
@@ -428,6 +476,7 @@
     bottom: 0;
     left: 0;
     object-fit: cover;
+    z-index: -1;
 }
 
 .roadmap-right-img {
@@ -435,6 +484,7 @@
     top: -20% !important;
     right: 0;
     object-fit: cover;
+    z-index: -1;
 }
 
 /****** accordion ******/
@@ -548,7 +598,7 @@
         margin-top: 0px;
     }
 
-    .timeline::after {
+    /* .content-box::after {
         left: 31px;
     }
 
@@ -558,7 +608,7 @@
         padding-right: 25px;
     }
 
-    .timeline {
+    .content-box {
         width: 100%;
         height: 100%;
     }
@@ -580,6 +630,46 @@
 
     .left {
         left: 0%;
+    } */
+}
+
+@media (max-width: 575.98px) {
+    .text-left {
+        text-align: left;
+    }
+
+    .roadmap::after {
+        left: 45px;
+    }
+
+    .content-box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .content-box::before {
+        left: 60px;
+        border: 1px solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 27px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .mb-440 {
+        margin-bottom: 0px !important;
+    }
+
+    .accordion-right-img {
+        display: none;
     }
 }
 
