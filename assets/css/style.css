@@ -22,7 +22,7 @@
 }
 
 .max-w-547 {
-    max-width: 547px;
+    max-width: 547px !important;
 }
 
 /***** margin & padding *****/
@@ -56,6 +56,10 @@
 
 .mt-59 {
     margin-top: 59px !important;
+}
+
+.mt-73 {
+    margin-top: 73px !important;
 }
 
 .p-15 {
@@ -372,26 +376,6 @@
     color: #000000;
 }
 
-h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 50px;
-    text-align: left;
-    color: #000000;
-}
-
-
-p {
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    color: #000000;
-}
-
-
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -409,7 +393,7 @@ p {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    height: 72.5%;
+    height: 74.5%;
 }
 
 
@@ -420,14 +404,13 @@ p {
     width: 60%;
 }
 
-
 .content-box::after {
     content: '';
     position: absolute;
     width: 36px;
     height: 36px;
     right: -19px;
-    background: linear-gradient(180deg, #FFA800 0%, #F06500 100%);
+    background: linear-gradient(180deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
     top: 13%;
     border-radius: 50%;
     z-index: 1;
@@ -440,7 +423,6 @@ p {
 
 .right {
     left: 50%;
-    /* right: -50%; */
 }
 
 .right::after {
@@ -449,59 +431,102 @@ p {
 
 
 .content {
-    padding: 20px 95px;
+    margin: 30px 95px;
     position: relative;
     border-radius: 10px;
 }
 
+.roadmap-left-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.roadmap-right-img {
+    position: absolute;
+    top: -20% !important;
+    right: 0;
+    object-fit: cover;
+}
 
 /****** accordion ******/
 .faq .accordion {
-    max-width: 635px !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-border-width: none !important;
     width: 100%;
+    margin-top: 46px !important;
 }
 
 .faq .accordion-button {
-    box-shadow: none !important;
     margin: 24px 0px 17px 0px !important;
-    padding: 0 !important;
-}
-
-.faq .accordion-button:not(.collapsed) {
-    padding-bottom: 25px;
-}
-
-.faq .accordion-item {
-    z-index: 1;
-    border: none;
+    padding: 16px 22px 16px 16px !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    backdrop-filter: blur(32px) !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
 }
 
 .faq .accordion-body {
-    padding: 0px 0px 20px 0px !important;
+    padding: 0px 16px 16px 16px !important;
 }
 
 .faq .accordion-item {
-    position: relative;
-    overflow: hidden;
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    backdrop-filter: blur(32px) !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
 }
 
-.faq .accordion-button {
-    background-color: transparent !important;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+.faq .accordion-button:not(.collapsed) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 
 .faq .accordion-button:not(.collapsed)::after {
-    background-image: url("../image/svg/arrow-2-svg.svg") !important;
-    background-size: contain;
+    background-image: url(../image/svg/arrow-2-svg.svg);
     background-position: center;
-    transform: rotate(0);
+    background-size: contain;
+    transform: rotate(180);
+
 }
 
 .faq .accordion-button::after {
-    background-image: url("../image/svg/arrow-img.svg") !important;
-    background-size: contain;
+    background-image: url(../image/svg/arrow-img.svg);
     background-position: center;
+    background-size: contain;
+}
+
+.box-3 {
+    position: relative;
+}
+
+.box-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-73 {
+    margin-top: 73px;
+}
+
+.mb-456 {
+    margin-bottom: 456px;
 }
 
 @media screen and (max-width: 768px) {
@@ -551,6 +576,10 @@ p {
 @media (max-width:991.98px) {
     .card-1 {
         margin-top: 24px;
+    }
+
+    .roadmap-right-img {
+        display: none;
     }
 }
 
