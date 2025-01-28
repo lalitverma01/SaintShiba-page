@@ -48,14 +48,6 @@
     margin-bottom: 14px;
 }
 
-.mt-16 {
-    margin-top: 16px;
-}
-
-.mb-24 {
-    margin-bottom: 24px;
-}
-
 .mb-32 {
     margin-bottom: 32px;
 }
@@ -117,7 +109,7 @@
     margin-bottom: 440px;
 }
 
-.white-space {
+.white-nowrap {
     white-space: nowrap;
 }
 
@@ -145,7 +137,7 @@
     cursor: pointer;
 }
 
-.rotate40 {
+.rotate-42 {
     transform: rotate(42deg);
 }
 
@@ -153,7 +145,7 @@
     z-index: 5;
 }
 
-.rotate-45 {
+.rotate-43 {
     transform: rotate(-43deg);
 }
 
@@ -239,14 +231,6 @@
     background: var(--bg-kettle-black) !important;
 }
 
-.m-11 {
-    margin: 11px 0 11px 13px;
-}
-
-.mt-48 {
-    margin-top: 48px;
-}
-
 .overflow-img {
     position: absolute;
     right: 0;
@@ -321,27 +305,27 @@
     border-radius: 4px;
 }
 
-.bg-color {
+.bg-black-wash {
     background-color: var(--bg-black-wash);
 }
 
-.bg-1 {
+.bg-royal-flycatcher {
     background: var(--color-royal-flycatcher-crest);
 }
 
-.bg-2 {
+.bg-purple {
     background: var(--bg-thick-purple);
 }
 
-.bg-3 {
+.bg-blue {
     background: var(--bg-krishna-blue);
 }
 
-.bg-4 {
+.bg-yellow {
     background: var(--color-chrome-yellow);
 }
 
-.bg-5 {
+.bg-neon {
     background: var(--bg-neon-fuchsia);
 }
 
@@ -493,7 +477,7 @@
     background-image: url(../image/svg/arrow-2-svg.svg);
     background-position: center;
     background-size: contain;
-    transform: rotate(180);
+    transform: rotate(0deg) !important;
 }
 
 .faq .accordion-button::after {
@@ -525,7 +509,45 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width:991.98px) {
+    .nav-link {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        justify-content: center;
+        bottom: 0;
+        right: -100% !important;
+        top: 0%;
+        transition: all 300ms linear !important;
+        z-index: 5;
+        backdrop-filter: blur(100px);
+    }
+
+    .show-navbar {
+        right: 0 !important;
+    }
+
+    .card-1 {
+        margin-top: 24px;
+    }
+
+    .roadmap-right-img {
+        display: none;
+    }
+
+    .overflow-img {
+        position: unset;
+        width: 100%;
+    }
+}
+
+@media (max-width:768.98px) {
+    .card-1 {
+        margin-top: 0px;
+    }
+
     .timeline::after {
         left: 31px;
     }
@@ -558,48 +580,6 @@
 
     .left {
         left: 0%;
-    }
-}
-
-@media (max-width:991.98px) {
-    .card-1 {
-        margin-top: 24px;
-    }
-
-    .roadmap-right-img {
-        display: none;
-    }
-
-    .overflow-img {
-        position: unset;
-        width: 100%;
-    }
-}
-
-@media (max-width:768.98px) {
-    .card-1 {
-        margin-top: 0px;
-    }
-}
-
-@media (max-width:991.98px) {
-    .nav-link {
-        display: flex !important;
-        flex-direction: column;
-        width: 100%;
-        min-height: 100vh;
-        position: fixed;
-        justify-content: center;
-        bottom: 0;
-        right: -100% !important;
-        top: 0%;
-        transition: all 300ms linear !important;
-        z-index: 5;
-        backdrop-filter: blur(100px);
-    }
-
-    .show-navbar {
-        right: 0 !important;
     }
 }
 
