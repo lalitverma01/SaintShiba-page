@@ -21,6 +21,7 @@
     --bg-raven: #0C0B0B;
     --bg-black-wash: #0C0C0C;
     --bg-kettle-black: #151313;
+    --bg-siyah-black: #1D1A1A;
     --color-white: white;
     --color-royal-flycatcher-crest: #F06500;
     --bg-aqua-green: #00E396;
@@ -101,6 +102,10 @@
 
 .bg-raven {
     background-color: var(--bg-raven);
+}
+
+.bg-siyah-black {
+    background-color: var(--bg-siyah-black);
 }
 
 .color-royal-flycatcher-crest {

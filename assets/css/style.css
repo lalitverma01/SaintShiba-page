@@ -12,6 +12,16 @@
     background: var(--color-black);
 }
 
+.navbar-link {
+    transition: all 300ms linear;
+}
+
+.navbar-link:hover {
+    background: linear-gradient(103.52deg, var(--color-chrome-yellow) 18.99%, var(--color-royal-flycatcher-crest) 82.34%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /***** width *****/
 .max-w-1320 {
     max-width: 1320px !important;
@@ -56,6 +66,10 @@
 
 .mt-59 {
     margin-top: 59px !important;
+}
+
+.mt-62 {
+    margin-top: 62px;
 }
 
 .mt-73 {
@@ -143,6 +157,14 @@
     background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
 }
 
+.btn-1:hover,
+.btn-2:hover {
+    background-color: #fff;
+    color: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%) !important;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .btn-2 {
     padding: 12px 32px 12px 32px;
     border-radius: 33px;
@@ -156,7 +178,6 @@
     border-radius: 10px;
     backdrop-filter: blur(32px) !important;
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
-    /* transform: translateY(-125px); */
 }
 
 .box::before {
@@ -187,18 +208,6 @@
     min-height: 812px;
 }
 
-.cras-btn {
-    width: 71px;
-    height: 71px;
-    border-radius: 100%;
-    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
-}
-
-.cras-btn:hover {
-    color: var(--color-black) !important;
-    background-color: var(--color-white) !important;
-}
-
 .number-2 {
     font-size: 22px;
     font-weight: 600;
@@ -213,7 +222,7 @@
 }
 
 .btn-3:hover .number-2 {
-    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+    background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
     color: white;
 }
 
@@ -231,8 +240,10 @@
     margin-top: 48px;
 }
 
-.sec-3-img {
-    transform: translateX(180px);
+.overflow-img {
+    position: absolute;
+    right: 0;
+    width: 50%;
 }
 
 /****** tokenomics ******/
@@ -366,15 +377,6 @@
 }
 
 /****** roadmap ******/
-
-.roadmap {
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    text-align: center;
-    color: #000000;
-}
 
 .timeline {
     position: relative;
@@ -525,8 +527,14 @@
     margin-top: 73px;
 }
 
-.mb-456 {
-    margin-bottom: 456px;
+.mb-440 {
+    margin-bottom: 440px;
+}
+
+.accordion-right-img {
+    bottom: -100% !important;
+    right: 0 !important;
+    z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
@@ -580,6 +588,11 @@
 
     .roadmap-right-img {
         display: none;
+    }
+
+    .overflow-img {
+        position: unset;
+        width: 100%;
     }
 }
 
