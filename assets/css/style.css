@@ -48,6 +48,10 @@
     margin-bottom: 14px;
 }
 
+.mt-32 {
+    margin-top: 32px;
+}
+
 .mb-32 {
     margin-bottom: 32px;
 }
@@ -68,12 +72,24 @@
     margin-top: 73px !important;
 }
 
-.p-15 {
-    padding: 15px 15px;
+.mb-87 {
+    margin-bottom: 87px;
 }
 
-.pl-25 {
-    padding-left: 25px;
+.mt-89 {
+    margin-top: 89px;
+}
+
+.mb-440 {
+    margin-bottom: 440px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.pt-17 {
+    padding: 17px !important;
 }
 
 .pt-19 {
@@ -89,24 +105,17 @@
     padding-left: 23px;
 }
 
-.p-17 {
-    padding: 17px 25px !important;
+.pl-25 {
+    padding-left: 25px;
+}
+
+
+.pr-25 {
+    padding-right: 25px;
 }
 
 .padding-60 {
     padding: 60px;
-}
-
-.mt-32 {
-    margin-top: 32px;
-}
-
-.mt-73 {
-    margin-top: 73px;
-}
-
-.mb-440 {
-    margin-bottom: 440px;
 }
 
 .white-nowrap {
@@ -203,10 +212,6 @@
 }
 
 /***** section-2 *****/
-.h-812 {
-    min-height: 812px;
-}
-
 .number-2 {
     font-size: 22px;
     font-weight: 600;
@@ -240,6 +245,11 @@
     position: absolute;
     right: 0;
     width: 50%;
+    max-height: 636px !important;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    transform: translateY(0%);
 }
 
 /****** tokenomics ******/
