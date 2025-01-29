@@ -28,7 +28,7 @@
 }
 
 .max-w-660 {
-    max-width: 579px;
+    max-width: 660px;
 }
 
 .max-w-547 {
@@ -159,7 +159,7 @@
 .btn-1:hover,
 .btn-2:hover {
     color: var(--color-royal-flycatcher-crest) !important;
-    background: white !important; 
+    background: white !important;
 }
 
 .btn-2 {
@@ -366,68 +366,6 @@
 }
 
 /****** roadmap ******/
-/* .content-box {
-    position: relative;
-    max-width: 1200px;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.content-box::after {
-    content: '';
-    position: absolute;
-    width: 8px;
-    background-color: var(--color-white);
-    top: 6%;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    height: 74.5%;
-}
-
-.content-box {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 60%;
-}
-
-.content-box::after {
-    content: '';
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right: -19px;
-    background: linear-gradient(180deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
-    top: 13%;
-    border-radius: 50%;
-    z-index: 1;
-    margin-top: 12px;
-}
-
-.left {
-    left: -10%;
-}
-
-.right {
-    left: 50%;
-}
-
-.right::after {
-    left: -16px;
-}
-
-.content {
-    margin: 30px 95px;
-    position: relative;
-    border-radius: 10px;
-} */
-
-.py-59 {
-    padding-top: 59px;
-    padding-bottom: 59px;
-}
-
 .roadmap::after {
     content: '';
     position: absolute;
@@ -527,7 +465,7 @@
     background-image: url(../image/svg/arrow-2-svg.svg);
     background-position: center;
     background-size: contain;
-    transform: rotate(0deg) !important;
+    transform: rotate(0) !important;
 }
 
 .faq .accordion-button::after {
@@ -598,39 +536,9 @@
         margin-top: 0px;
     }
 
-    /* .content-box::after {
-        left: 31px;
+    .para br {
+        display: none;
     }
-
-    .content-box {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .content-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .content-box::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-    }
-
-    .left::after,
-    .right::after {
-        left: 15px;
-    }
-
-    .right {
-        left: 0%;
-    }
-
-    .left {
-        left: 0%;
-    } */
 }
 
 @media (max-width: 575.98px) {
