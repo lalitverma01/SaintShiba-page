@@ -24,9 +24,11 @@
     --bg-siyah-black: #1D1A1A;
     --color-white: white;
     --color-royal-flycatcher-crest: #F06500;
+    --bg-royal-flycatcher-crest: #F06500;
     --bg-aqua-green: #00E396;
     --bg-thick-purple: #8B35E2;
     --color-chrome-yellow: #FFA800;
+    --bg-chrome-yellow: #FFA800;
     --bg-krishna-blue: #00B2FF;
     --bg-neon-fuchsia: #FF4560;
 }
@@ -97,19 +99,59 @@
 
 /***** color *****/
 .color-black {
-    color: var(--color-black);
+    color: var(--color-black) !important;
 }
 
 .bg-raven {
-    background-color: var(--bg-raven);
+    background-color: var(--bg-raven) !important;
 }
 
 .bg-siyah-black {
-    background-color: var(--bg-siyah-black);
+    background-color: var(--bg-siyah-black) !important;
 }
 
 .color-royal-flycatcher-crest {
     color: var(--color-royal-flycatcher-crest) !important;
+}
+
+.bg-royal-flycatcher-crest {
+    background-color: var(--bg-royal-flycatcher-crest) !important;
+}
+
+.bg-aqua-green {
+    background-color: var(--bg-aqua-green) !important;
+}
+
+.bg-thick-purple {
+    background-color: var(--bg-thick-purple) !important;
+}
+
+.color-chrome-yellow {
+    color: var(--color-chrome-yellow) !important;
+}
+
+.bg-krishna-blue {
+    background-color: var(--bg-krishna-blue) !important;
+}
+
+.bg-neon-fuchsia {
+    background-color: var(--bg-neon-fuchsia) !important;
+}
+
+.bg-chrome-yellow {
+    background-color: var(--bg-chrome-yellow) !important;
+}
+
+.bg-black-wash {
+    background-color: var(--bg-black-wash) !important;
+}
+
+/***** media queries *****/
+@media (max-width:991.98px) {
+    :root {
+        --text-2xl: 72px;
+        --lh-95: 80px;
+    }
 }
 
 @media (max-width:767.98px) {

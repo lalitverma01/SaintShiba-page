@@ -164,7 +164,7 @@
 .btn-1:hover,
 .btn-2:hover {
     color: var(--color-royal-flycatcher-crest) !important;
-    background: white !important;
+    background: var(--color-white) !important;
 }
 
 .btn-2 {
@@ -175,7 +175,6 @@
 }
 
 .box {
-    position: relative;
     padding: 24px;
     border-radius: 10px;
     backdrop-filter: blur(16px) !important;
@@ -227,7 +226,7 @@
 
 .btn-3:hover .number-2 {
     background: linear-gradient(90deg, var(--color-chrome-yellow) 0%, var(--color-royal-flycatcher-crest) 100%);
-    color: white;
+    color: var(--color-white);
 }
 
 .btn-3 {
@@ -253,10 +252,6 @@
 }
 
 /****** tokenomics ******/
-.position-relative {
-    position: relative;
-}
-
 .parent {
     width: 92px;
     height: 67px;
@@ -266,7 +261,6 @@
 .card-2 {
     height: 154px;
     padding: 16px 20px;
-    position: relative;
     border-radius: 10px;
     backdrop-filter: blur(32px);
 }
@@ -320,30 +314,6 @@
     border-radius: 4px;
 }
 
-.bg-black-wash {
-    background-color: var(--bg-black-wash);
-}
-
-.bg-royal-flycatcher {
-    background: var(--color-royal-flycatcher-crest);
-}
-
-.bg-purple {
-    background: var(--bg-thick-purple);
-}
-
-.bg-blue {
-    background: var(--bg-krishna-blue);
-}
-
-.bg-yellow {
-    background: var(--color-chrome-yellow);
-}
-
-.bg-neon {
-    background: var(--bg-neon-fuchsia);
-}
-
 .card-3 {
     max-width: 315px;
 }
@@ -385,7 +355,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: var(--color-white);
     top: 20px;
     bottom: 0;
     left: 50%;
@@ -395,7 +365,6 @@
 
 .content-box {
     padding: 10px 40px;
-    position: relative;
     background-color: inherit;
     width: 50%;
 }
@@ -406,7 +375,7 @@
     width: 36px;
     height: 36px;
     right: -18px;
-    background: linear-gradient(180deg, #FFA800 0%, #F06500 100%);
+    background: linear-gradient(180deg, var(--bg-chrome-yellow) 0%, var(--bg-royal-flycatcher-crest) 100%);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -425,14 +394,12 @@
 }
 
 .roadmap-left-img {
-    position: absolute;
     bottom: 0;
     left: 0;
     object-fit: cover;
 }
 
 .roadmap-right-img {
-    position: absolute;
     top: -20% !important;
     right: 0;
     object-fit: cover;
@@ -497,10 +464,6 @@
     height: 7px;
     background-position: center;
     background-size: contain;
-}
-
-.box-3 {
-    position: relative;
 }
 
 .box-3::before {
