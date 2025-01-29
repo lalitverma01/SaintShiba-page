@@ -227,8 +227,13 @@
 
 .btn-3 {
     max-width: 660px !important;
+    cursor: pointer;
     border-radius: 46px !important;
     background: var(--bg-kettle-black) !important;
+}
+
+.btn-3:hover {
+    background-color: var(--bg-raven) !important;
 }
 
 .overflow-img {
@@ -434,18 +439,26 @@
 }
 
 .faq .accordion-button {
-    margin: 24px 0px 17px 0px !important;
+    margin: 24px 0px 0px 0px !important;
     padding: 16px 22px 16px 16px !important;
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
     backdrop-filter: blur(32px) !important;
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
+    border-radius: 10px !important;
+}
+
+.faq .accordion-body:not(.collapsed) {
     border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    border-bottom-left-radius: 0px !important;
 }
 
 .faq .accordion-body {
     padding: 0px 16px 16px 16px !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.09) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    backdrop-filter: blur(32px) !important;
 }
 
 .faq .accordion-item {
@@ -462,14 +475,18 @@
 }
 
 .faq .accordion-button:not(.collapsed)::after {
-    background-image: url(../image/svg/arrow-2-svg.svg);
+    background-image: url(../image/svg/arrow-img.svg);
+    width: 11px;
+    height: 7px;
     background-position: center;
     background-size: contain;
-    transform: rotate(0) !important;
+    transform: rotate(180deg) !important;
 }
 
 .faq .accordion-button::after {
     background-image: url(../image/svg/arrow-img.svg);
+    width: 11px;
+    height: 7px;
     background-position: center;
     background-size: contain;
 }
